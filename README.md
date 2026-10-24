@@ -1,6 +1,6 @@
 <div align="center">
 
-# Spotify Tracks Analysis: Regression, Correlation, and PCA/SVD
+# SPARC : Spotify Patterns in Audio-feature Regression and Components
 
 ### Least-Squares Approximation of Audio Features — A Reproducible Study in Basics of Data Analysis
 
