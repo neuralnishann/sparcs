@@ -4,7 +4,7 @@
 
 A reproducible course project for *Basics of Data Analysis* at HSE University. The paper applies regression, PCA/SVD, K-means, contingency-table analysis, and bootstrap confidence intervals to a homogeneous sample of 1,000 pop tracks.
 
-**Read the report:** [PDF](report/main.pdf) · [LaTeX source](report/main.tex)
+The LaTeX source, HSE logo assets, and compiled PDF are kept locally in `report/`. The entire directory is ignored by Git.
 
 ## At a glance
 
@@ -175,16 +175,16 @@ jupyter notebook
 
 Run the five assignment notebooks in order when reproducing the analysis from raw data. The report documents fixed seeds: 42 for sampling and bootstrap and 0–14 for K-means initializations.
 
-### Build the report
+### Build the local report
 
-Install a LaTeX distribution that includes `latexmk` and `pdflatex`, then build from the report directory so the relative figure and logo paths resolve:
+Install a LaTeX distribution that includes `latexmk` and `pdflatex`. If the local `report/` source and logo assets are present, build from that directory so the relative figure and logo paths resolve:
 
 ```bash
 cd report
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The compiled report is [`report/main.pdf`](report/main.pdf). LaTeX auxiliary files are ignored by Git; the PDF, source, notebooks, figures, logo assets, and pop-subset CSV are retained.
+The compiled report is `report/main.pdf`. The full `report/` directory—including its source, logos, and PDF—is excluded from Git; LaTeX auxiliary files are ignored as well.
 
 ## Repository layout
 
@@ -196,15 +196,12 @@ The compiled report is [`report/main.pdf`](report/main.pdf). LaTeX auxiliary fil
 ├── Assignment4_Contingency_Spotify.ipynb
 ├── Assignment5_Bootstrap_Spotify.ipynb
 ├── figures/                 # Report figures
-├── logos/                   # HSE logo assets
-├── report/
-│   ├── main.tex             # LaTeX source
-│   ├── main.pdf             # Compiled report
-│   └── logos/               # Logo assets used by the report
 ├── spotify_pop_1000.csv     # Analysis sample
 ├── .gitignore
 └── README.md
 ```
+
+The local `report/` directory is intentionally omitted: it is fully Git-ignored.
 
 ## References
 

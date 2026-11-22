@@ -16,7 +16,7 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# LaTeX build files (keep report/main.pdf)
+# LaTeX build files
 *.aux
 *.bbl
 *.blg
@@ -27,6 +27,9 @@ env/
 *.synctex.gz
 *.toc
 *.xdv
+
+# Local report sources, assets, and generated PDF
+/report/
 
 # Downloaded and generated full-dataset files
 /spotify_dataset.csv
