@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+logos/
+/logos/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LaTeX build files (keep report/main.pdf)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+
+# Downloaded and generated full-dataset files
+/spotify_dataset.csv
+/spotify_clean.csv
