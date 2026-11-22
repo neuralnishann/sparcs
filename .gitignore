@@ -1,7 +1,7 @@
 # macOS
 .DS_Store
-logos/
-/logos/
+# Logo archive
+/logos/*
 
 # Python
 __pycache__/

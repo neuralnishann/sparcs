@@ -1,10 +1,28 @@
-# SPARCS
+<div align="center">
 
-**SPARCS: Spotify Pop Association, Regression, Clustering, and SVD — A Bootstrap-Backed Analysis of Audio Features**
+<h1>SPARCS: Spotify Pop Association, Regression, Clustering, and SVD — A Bootstrap-Backed Analysis of Audio Features</h1>
 
-A reproducible course project for *Basics of Data Analysis* at HSE University. The paper applies regression, PCA/SVD, K-means, contingency-table analysis, and bootstrap confidence intervals to a homogeneous sample of 1,000 pop tracks.
+<p><strong>S. M. Gazzali Arafat Nishan</strong></p>
+<p>Faculty of Computer Science · HSE University · Moscow · 2026</p>
+<p>Supervisor: Prof. Boris Grigoryevich Mirkin · Course: <em>Basics of Data Analysis</em></p>
 
-The LaTeX source, HSE logo assets, and compiled PDF are kept locally in `report/`. The entire directory is ignored by Git.
+<p>
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/NumPy-computing-013243?logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/pandas-data-150458?logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/SciPy-statistics-8CAAE6?logo=scipy&logoColor=white" alt="SciPy">
+  <img src="https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/Matplotlib-visualization-11557C" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/seaborn-visualization-4C72B0" alt="seaborn">
+  <img src="https://img.shields.io/badge/LaTeX-report-008080?logo=latex&logoColor=white" alt="LaTeX">
+</p>
+
+</div>
+
+---
+
+A reproducible course project applying regression, PCA/SVD, K-means, contingency-table analysis, and bootstrap confidence intervals to a homogeneous sample of 1,000 pop tracks.
 
 ## At a glance
 
@@ -17,6 +35,16 @@ The report is organized around five course assignments. Its central theme is the
 | **A3** | K-means with $K=4$ and $K=7$ | The report compares 15 initializations per K and favors $K=4$ for its clearer cluster interpretation. |
 | **A4** | Popularity level versus explicit status | The association is statistically significant ($\chi^2=37.10$, $p\approx8.8\times10^{-9}$), with modest strength. |
 | **A5** | Bootstrap comparisons of mean energy | Based on 10,000 resamples; the 95% pivotal interval for the sample's mean energy is [0.5956, 0.6173]. |
+
+## Technology stack
+
+| Technology | Use in the project |
+|---|---|
+| Python and Jupyter | Executable assignment analyses and reproducible workflows |
+| NumPy, pandas, SciPy | Array computation, data preparation, statistical calculations, and bootstrap analysis |
+| scikit-learn | Feature standardization, PCA comparison, train/test validation, and clustering |
+| Matplotlib and seaborn | Statistical plots and report figures |
+| LaTeX (`pdflatex`, `latexmk`) | Typesetting and building the academic report |
 
 ## Report overview
 
@@ -196,6 +224,7 @@ The compiled report is `report/main.pdf`. The full `report/` directory—includi
 ├── Assignment4_Contingency_Spotify.ipynb
 ├── Assignment5_Bootstrap_Spotify.ipynb
 ├── figures/                 # Report figures
+├── logos/                   # Local assets (Git-ignored)
 ├── spotify_pop_1000.csv     # Analysis sample
 ├── .gitignore
 └── README.md
